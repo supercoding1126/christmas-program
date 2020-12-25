@@ -1,0 +1,48 @@
+import turtle
+import random
+import time
+
+giftchoice = ['1.gif','2.gif','3.gif','4.gif','5.gif','6.gif','61.gif','7.gif','8.gif','9.gif','10.gif']
+
+wn = turtle.Screen()
+wn.bgcolor('lightgreen')
+turtle.register_shape('1.gif')
+turtle.register_shape('2.gif')
+turtle.register_shape('3.gif')
+turtle.register_shape('4.gif')
+turtle.register_shape('5.gif')
+
+turtle.register_shape('6.gif')
+turtle.register_shape('61.gif')
+turtle.register_shape('7.gif')
+turtle.register_shape('8.gif')
+turtle.register_shape('9.gif')
+turtle.register_shape('10.gif')
+turtle.register_shape('gift.gif')
+turtle.register_shape('openedgift1.gif')
+
+originalgift = turtle.Turtle()
+originalgift.shape('gift.gif')
+
+
+gifts = turtle.Turtle()
+
+
+
+
+def start()
+
+turtle.listen()
+def change_gift():
+   gifts.shape(random.choice(giftchoice))
+   if turtle.onkeypress(stop, 'space'):
+      break
+
+
+
+turtle.onkeypress(change_gift, 's')
+
+
+
+
+wn.mainloop()
